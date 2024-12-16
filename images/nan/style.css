@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition:0.4s;
 }
 body{
     width: 100%;
@@ -10,7 +11,7 @@ body{
 }
 nav{
     position: relative;
-    width: 1200px;
+   max-width: 1200px;
     margin:0 auto;
     padding: 30px 0;
     display: flex;
@@ -279,7 +280,7 @@ box-shadow: 0 5px 20px hsl(26, 100%, 55%) ;
 .left-model .image-model img{
     width: 100%;
     border-radius: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 .left-model .small-img{
     display: flex;
@@ -289,6 +290,10 @@ box-shadow: 0 5px 20px hsl(26, 100%, 55%) ;
     width: 100px;
     cursor: pointer;
     border-radius: 10px;
+}
+.left-model .small-img img:hover{
+    transform: scale(0.9);
+    transition: 0.3s;
 }
 .model .icon{
     position: absolute;
@@ -300,5 +305,20 @@ box-shadow: 0 5px 20px hsl(26, 100%, 55%) ;
     color: hsl(26, 100%, 55%);
     font-size: 25px;
 }
+.check{
+    margin-top: 20px;
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    background-color: hsl(26, 100%, 55%);
+    font-size: 16px;
+    border: none;
+    outline: none;
+    display: none;
+}
+.check:hover{
+    opacity: 0.7;
+}
+
 
 
